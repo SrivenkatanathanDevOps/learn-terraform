@@ -9,3 +9,6 @@ resource "ec2_instance" "frontend" {
 }
 
 
+provider "aws" {
+  region = "us-east-1"
+}
