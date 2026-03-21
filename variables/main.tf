@@ -30,6 +30,16 @@ variable "Map_val" {
   type = map(any)
 }
 
+variable "any_val" {
+  default = "Muruga sharanam"
+  type    = any
+}
+
+variable "null_val" {
+  default = null
+  type    = string
+}
+
 
 output "string_val" {
   value = var.string_val
@@ -51,4 +61,13 @@ output "list_val" {
 
 output "map_val" {
   value = var.Map_val
+}
+
+
+output "any_val" {
+  value = var.any_val
+}
+
+output "null_val" {
+  value = var.null_val
 }
